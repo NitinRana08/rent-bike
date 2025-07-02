@@ -23,14 +23,18 @@ nav a{
     position: relative;
     text-align: center;
     padding: 100px 20px;
-    background: url(bullet.jpg) no-repeat center center/cover;
+    background: url(/image/bullet.jpg) no-repeat center center/cover;
     background-size: cover;
     color: white;
-    position: relative;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+
+
+
+   
 
 
 }
@@ -41,6 +45,11 @@ nav a{
   height: 100%;
   background: rgba(0,0,0,0.4);
   z-index: 1;
+}
+.hero h2,.hero p, .hero .btn{
+    z-index: 2;
+    position: relative;
+
 }
 .hero .btn {
     padding:10px 20px ;
@@ -58,4 +67,49 @@ footer{
     text-align: center;
     padding: 20px;
     background: #f2f2f2;
+}
+
+.bike-list{
+   padding: 40px 20px;
+   text-align: center;
+
+}
+.bike-guid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.bike-card{
+    background: #f9f9f9;
+    border-radius: 12px;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease;
+}
+.bike-card img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+.bike-card h3{
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+.bike-card p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.bike-card button {
+    padding: 8px 10px;
+    background: orange;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+
 }

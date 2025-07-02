@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Bikes - Rana's Bike </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rana's Bike</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bikes.html">Bikes</a>
+            <a href="booking.html">Book Now</a>
+            <a href="confirm.html">My Booking</a>
+        </nav>
+    </header>
+
+    <section class="bike-list">
+        <h2>Available Bikes</h2>
+        <div class="bike-guid">
+
+            <div class="bike-card">
+                <img src="image/RE-350.jpg" alt="Royal Enfield 350">
+                <h3>Royal Enfield Clasic 350</h3>
+                <p>₹900/day</p>
+                <button onclick="bookBike('Royal Enfield Classic 350')">Book Now</button>
+
+            </div>
+
+            <div class="bike-card">
+                <img src="image/z900.jpg" alt="kawasaki ninja z900">
+                <h3>kawasaki ninja z900</h3>
+                <p>₹1300/day</p>
+                <button onclick="bookBike('kawasaki ninja z900')">Book Now</button>
+            </div>
+
+            <div class="bike-card">
+                <img src="image/310.jpg" alt="BMW G 310 R">
+                <h3>BMW G 310 R</h3>
+                <p>₹1000/day</p>
+                <button onclick="bookBike('BMW G 310 R')">Book Now</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>c 2025 Rana's Bike. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
