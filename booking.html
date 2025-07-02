@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking RBike</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rann's Bike</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="bikes.html">Bikes</a>
+            <a href="booking.html">Book Now</a>
+            <a href="confirm.html">My Booking</a>
+        </nav>
+    </header>
+
+    <section class="booking-form">
+    <h2>Book Your Ride</h2>
+
+    <form onsubmit="submitBooking(event)">
+        <label >Seleted Bike:</label>
+        <input type="text" id="selectedBike" disabled>
+
+        <label for="name" >Your Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" inputmode="numeric" maxlength="10"  required pattern="[0-9]{10}" 
+        oninput="this.value = this.value.replace([0-9], g,'')">
+        <p id="error" style="color: red; display: none ;">Phone number must be 10 disgits</p>
+
+        <label for="pickup">Pickuo Data:</label>
+        <input type="date" id="pickup" required>
+
+        <label for="return">Return Date:</label>
+         <input type="date" id="return" required>
+
+         <button type="submit">Confirm Booking</button>
+    </form>
+    </section>
+
+    <footer>
+        <p>  c 2025 Rana's Bike. All right reserved.</p>
+      
+    </footer>
+    
+</body>
+</html>
