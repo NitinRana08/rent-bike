@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking RBike</title>
+    <title>Rana's Booking</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Rann's Bike</h1>
+        <h1>Rana's Bike</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="bikes.html">Bikes</a>
@@ -22,17 +22,18 @@
 
     <form onsubmit="submitBooking(event)">
         <label >Seleted Bike:</label>
-        <input type="text" id="selectedBike" disabled>
+        <input type="text" id="selectedBike" disabled/>
 
         <label for="name" >Your Name:</label>
-        <input type="text" id="name" required>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        <span id="nameError" style="display: none; color: red;">Please enter a valid name.</span>
 
         <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" inputmode="numeric" maxlength="10"  required pattern="[0-9]{10}" 
         oninput="this.value = this.value.replace([0-9], g,'')">
-        <p id="error" style="color: red; display: none ;">Phone number must be 10 disgits</p>
+        <p id="error" style="color: red; display: none;">Phone number must be 10 disgits</p>
 
-        <label for="pickup">Pickuo Data:</label>
+        <label for="pickup">Pickup Data:</label>
         <input type="date" id="pickup" required>
 
         <label for="return">Return Date:</label>
@@ -46,6 +47,8 @@
         <p>  c 2025 Rana's Bike. All right reserved.</p>
       
     </footer>
+
+    <script src="script.js"></script>
     
 </body>
 </html>

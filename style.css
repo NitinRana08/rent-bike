@@ -4,9 +4,11 @@ body{
     font-family: sans-serif;
     background: #fff;
     color: #222;
+    /* overflow: hidden; */
 
 }
 header{
+    
     background: #111;
     color: white;
     padding: 10px 20px;
@@ -20,31 +22,24 @@ nav a{
     text-decoration: none;
 
 }
-.hero{
-    position: relative;
-    text-align: center;
-    padding: 100px 20px;
-    background: url(/image/bullet.jpg) no-repeat center center/cover;
-    background-size: cover;
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-
-
-
-   
+.hero {
+  height: 100vh; /* full screen height */
+  background-image: url('/image/bullet.jpg');
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: cover; /* scales image to fill area */
+  
+  
 
 
 }
-.hero .overlay{
-    position: absolute;
+
+.hero .overlays{
+    /* position: absolute; */
     top: 0 ; left: 0 ;
     width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  /* background: rgba(211, 181, 181, 0.4); */
   z-index: 1;
 }
 .hero h2,.hero p, .hero .btn{
@@ -144,4 +139,35 @@ footer{
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.confirmation{
+    padding: 40px 20px;
+    text-align: center;
+}
+.booking-card{
+    margin: 30px auto;
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+.booking-card p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+.btn-group{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.btn-group .btn{
+ background: orange;
+ color: black;
+ padding: 10px 20px;
+ text-decoration: none;
+ font-weight: bold;
+ border-radius: 6px;   
 }
