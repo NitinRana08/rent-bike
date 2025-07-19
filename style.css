@@ -45,6 +45,7 @@ nav a{
 .hero h2,.hero p, .hero .btn{
     z-index: 2;
     position: relative;
+    text-align: center;
 
 }
 .hero .btn {
@@ -56,6 +57,9 @@ nav a{
     margin-top: 20px;
     display: inline-block;
     border-radius: 6px;
+    text-align: center;
+    justify-content: baseline;
+    
 
 
 }
